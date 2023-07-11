@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant</title>
+    <!-- tailwind css cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- icon -->
+    <link rel="shortcut icon" href="/img/hat.png" type="image/x-icon">
+
+    
+</head>
+
+<body>
+
+    <!-- navbar starts -->
+    <div class="w-full sticky top-0 z-30 bg-white  shadow-md ">
+        <div "
+            class=" flex flex-col max-w-screen-xl px-4 mx-auto md:flex-row md:px-6 lg:px-8">
+            <div class="p-1 flex flex-row ">
+                <img src="/img/remove_restaurant-removebg-preview.png" width="150px">
+            </div>
+
+        </div>
+    </div>
+
+    <!-- navbar ends -->
+
+    <!-- heading starts -->
+    <div class="pt-8  ">
+        <h1 class="text-center text-4xl font-bold text-gray-500">Register A Table</h1>
+    </div>
+
+    <!-- heading ends -->
+
+
+    <!-- form starts -->
+    <div class="flex items-center justify-center  p-12">
+        <div class="mx-auto  w-full max-w-[950px]">
+            <form method="POST">
+
+                <!-- name field starts -->
+                <div class="-mx-3 flex flex-wrap">
+                    <div class="w-full px-3 sm:w-1/2">
+                        <div class="mb-5">
+                            <label for="fName" class="mb-3 block  font-medium text-[#07074D]">
+                                First Name
+                            </label>
+                            <input type="text" name="fName" id="fName" placeholder="First Name"
+                                class="w-full rounded-md border border-[#e0e0e0]  py-3 px-6  font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md" />
+                        </div>
+                    </div>
+                    <div class="w-full px-3 sm:w-1/2">
+                        <div class="mb-5">
+                            <label for="lName" class="mb-3 block  font-medium text-[#07074D]">
+                                Last Name
+                            </label>
+                            <input type="text" name="lName" id="lName" placeholder="Last Name"
+                                class="w-full rounded-md border border-[#e0e0e0]  py-3 px-6  font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md" />
+                        </div>
+                    </div>
+                </div>
+                <!-- name field ends -->
+
+                <!-- date and time field starts -->
+                <div class="-mx-3 flex flex-wrap">
+                    <div class="w-full px-3 sm:w-1/2">
+                        <div class="mb-5">
+                            <label for="date" class="mb-3 block  font-medium text-[#07074D]">
+                                Date
+                            </label>
+                            <input type="date" name="date" id="date"
+                                class="w-full rounded-md border border-[#e0e0e0]  py-3 px-6  font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md" />
+                        </div>
+                    </div>
+                    <div class="w-full px-3 sm:w-1/2">
+                        <div class="mb-5">
+                            <label for="time" class="mb-3 block  font-medium text-[#07074D]">
+                                Time
+                            </label>
+                            <input type="time" name="time" id="time"
+                                class="w-full rounded-md border border-[#e0e0e0]  py-3 px-6  font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md" />
+                        </div>
+                    </div>
+                </div>
+                <!-- date and time field ends -->
+
+                <!-- guest and contact  field starts -->
+                <div class="-mx-3 flex flex-wrap">
+                    <!-- guest field starts -->
+                    <div class="w-full px-3 sm:w-1/2">
+                        <div class="mb-5">
+                            <label for="fName" class="mb-3 block  font-medium text-[#07074D]">
+                                Number of Guests
+                            </label>
+                            <input type="number" name="guest" id="guest" min="0"
+                                class="w-full  rounded-md border border-[#e0e0e0]  py-3 px-6  font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md" />
+                        </div>
+                    </div>
+                    <!-- guest field ends -->
+
+
+                    <!-- contact field starts -->
+                    <div class="w-full px-3 sm:w-1/2">
+                        <div class="mb-5">
+                            <label for="contact" class="mb-3 block  font-medium text-[#07074D]">
+                                Contact
+                            </label>
+                            <input type="contact" name="contact" id="contact" placeholder="Contact No"
+                                class="w-full rounded-md border border-[#e0e0e0]  py-3 px-6  font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md" />
+                        </div>
+                    </div>
+                    <!-- contact field ends -->
+                </div>
+                <!-- guest and contact  field starts -->
+
+
+                <!-- textarea starts -->
+                <div class="mb-5">
+                    <label for="message" class="mb-3 block  font-medium text-[#07074D]">
+                        Special Request
+                    </label>
+                    <textarea type="text" name="message" id="message"
+                        class="w-full  rounded-md border border-[#e0e0e0]  py-3 px-6  font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
+                        name="text" id="message" cols="30" rows="10">
+                </textarea>
+
+                </div>
+                <!-- textarea ends -->
+
+                <!-- submit button starts -->
+                <div>
+                    <button
+                        class="hover:shadow-form rounded-md bg-[#6A64F1] py-3 px-8 text-center  font-semibold text-white outline-none">
+                        Submit
+                    </button>
+                </div>
+                <!-- submit button ends -->
+
+            </form>
+        </div>
+    </div>
+
+    <!-- form ends -->
+
+<!-- footer starts -->
+<footer class="text-gray-600 bg-gray-100 items-center body-font">
+    <div class="container px-5 py-5 mx-auto   sm:flex-row flex-col">
+        <a class="flex  items-center justify-center text-gray-900">
+            <img src="/img/remove_restaurant-removebg-preview.png" width="90px" alt="">
+            
+            <p class="text-sm text-gray-500 sm:ml-4  sm:pl-4 sm:border-l-2 sm:border-gray-200 ">
+                © Restaurant
+            </p>
+        </a>
+    </div>
+</footer>
+<!-- footer ends -->
+
+</body>
+
+</html>
